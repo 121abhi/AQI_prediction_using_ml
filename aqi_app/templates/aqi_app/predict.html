@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict AQI</title>
+</head>
+<body>
+    <h2>Predict AQI</h2>
+    <form method="post">
+        {% csrf_token %}
+
+        <label for="city">City: </label>
+        <input type="text" id="city" name="city"><br><br>
+        
+        <label for="pm25">PM2.5:</label>
+        <input type="text" id="pm25" name="pm25"><br><br>
+
+        <label for="pm10">PM10:</label>
+        <input type="text" id="pm10" name="pm10"><br><br>
+
+        <label for="no">NO:</label>
+        <input type="text" id="no" name="no"><br><br>
+
+        <label for="no2">NO2:</label>
+        <input type="text" id="no2" name="no2"><br><br>
+
+        <label for="nox">NOx:</label>
+        <input type="text" id="nox" name="nox"><br><br>
+
+        <label for="nh3">NH3:</label>
+        <input type="text" id="nh3" name="nh3"><br><br>
+
+        <label for="co">CO:</label>
+        <input type="text" id="co" name="co"><br><br>
+
+        <label for="so2">SO2:</label>
+        <input type="text" id="so2" name="so2"><br><br>
+
+        <label for="o3">O3:</label>
+        <input type="text" id="o3" name="o3"><br><br>
+
+        <label for="benzene">Benzene:</label>
+        <input type="text" id="benzene" name="benzene"><br><br>
+
+        <label for="toluene">Toluene:</label>
+        <input type="text" id="toluene" name="toluene"><br><br>
+
+        <label for="xylene">Xylene:</label>
+        <input type="text" id="xylene" name="xylene"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
